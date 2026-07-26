@@ -1,6 +1,6 @@
 {
   "name": "@lucid-softworks/mutex",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A fair, promise-based asynchronous mutex.",
   "keywords": [
     "javascript",
