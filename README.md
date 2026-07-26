@@ -6,9 +6,10 @@ A fair, promise-based mutex for protecting asynchronous critical sections.
 import { Mutex } from "@lucid-softworks/mutex";
 
 const mutex = new Mutex();
+let sharedValue = 0;
 
 await mutex.runExclusive(async () => {
-  await updateSharedState();
+  sharedValue += 1;
 });
 ```
 
